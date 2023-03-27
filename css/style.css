@@ -1,24 +1,24 @@
 html,body{
-    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    background-image: url('../img/galaxy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
 }
 
-.bleu{
+.rouge{
     color: red;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.pic{
+.panels{
     display: flex;
     height: 100vh;
     width: 100vw;
+}
+.panel{
     height: 100%;
     flex:1;
     transition: flex 1s;
@@ -28,37 +28,45 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 .panel:hover{
-    flex:4
-}
-
-.panel>.titreJeu:hover{
+    flex: 3;
     opacity: 100%;
 }
 
-.operation{
-    background-image: url("../img/opd.jpg");
+.panel>.Title:hover{
+    opacity: 100%;
 }
 
-.crack{
-    background-image: url("../img/ds1.jfif");
+.qfb{
+    background-image: url("../img/qfb.jpg");
+}
+
+.opd{
+    background-image: url("../img/opd.jpg");
   
 
 }
-.rift{
-    background-image: url("../img/ds2.jpg");
+.crack{
+    background-image: url("../img/crack.jpg");
 
 }
-.quest{
-    background-image: url("../img/ds3.jpg");
+.ra{
+    background-image: url("../img/ra.jpg");
 
 }
 
-.titreJeu{
-    color: white;
-    font-size: 6em;
-    font-family: 'Times New Roman';
-    opacity: 0%;
+.title{
+    color: #17003d;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Arial';
+    opacity: 100%;
     transition: opacity 1s;
+}
+
+.card{
+    display: flex;
+
 }
