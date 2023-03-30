@@ -55,11 +55,11 @@ html,body{
 
 }
 
-.opdp{
+.paragraph{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .title{
