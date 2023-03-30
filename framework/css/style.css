@@ -1,0 +1,116 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-image: url('../img/galaxy.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  nav ul{
+    display: flex;
+    background-image: url("../img/galaxy.jpg");
+    margin-top: 0px;
+    width: 100vw;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  
+  nav ul li{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+  
+  nav ul li:hover{
+    background-color: black;
+    opacity: 0.8;
+    transition-duration: 1s;
+  }
+  
+  nav ul li img{
+    width: 10vw;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    display: flex;
+    color: white;
+    font-family: 'Noto Serif JP';
+    font-size: 25px;
+    justify-content: space-evenly;
+  }
+  
+  .fading {
+    background: linear-gradient(#3e0672, 10%, #3100b896, 50%, transparent);
+    position: fixed;
+    width: 100%;
+    height: 3%;
+    margin-top: 105px;
+  }
+
+.panels{
+    display: flex;
+    height: 75vh;
+    width: 100vw;
+}
+.panel{
+    height: 100%;
+    flex:1;
+    transition: flex 1s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.panel:hover{
+    flex: 3;
+    opacity: 100%;
+}
+
+.panel>.Title:hover{
+    opacity: 100%;
+}
+
+.qfb{
+    background-image: url("../img/qfb.jpg");
+}
+
+.opd{
+    background-image: url("../img/opd.jpg");
+  
+
+}
+.crack{
+    background-image: url("../img/crack.jpg");
+
+}
+.ra{
+    background-image: url("../img/ra.jpg");
+
+}
+
+.title{
+    color: #17003d;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Arial';
+    opacity: 100%;
+    transition: opacity 1s;
+}
+
+.card{
+    display: flex;
+
+}
