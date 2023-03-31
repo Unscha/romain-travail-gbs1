@@ -1,15 +1,26 @@
 html,body{
-    margin: 0;
-    padding: 0;
     scroll-behavior: smooth;
-    background-color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     width: 100vw;
+    background: linear-gradient(#0d4b71, 50%, #17003d );
 }
 
-
+.title{
+    display: flex;
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'RG Future Regular';
+    opacity: 100%;
+    transition: opacity 1s;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 10px;
+}
 
 .panels{
     display: flex;
@@ -27,51 +38,61 @@ html,body{
     background-position: center;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
+
 .panel:hover{
     flex: 2;
     opacity: 100%;
-}
-
-.panel>.Title:hover{
-    opacity: 100%;
-}
-
-.qfb{
-    background-image: url("../img/qfb.png");
+    margin: 0;
+    transition: 1s ease;
 }
 
 .opd{
     background-image: url("../img/opd.jpg");
-  
+    margin-left: 20px;
 
 }
+
+.qfb{
+    background-image: url("../img/qfb.png");
+
+}
+
 .crack{
     background-image: url("../img/crack.jpg");
 
 }
 .ra{
     background-image: url("../img/ra.jpg");
-
+    margin-right: 20px;
 }
 
-.opdp{
+.grid-container-bs-light{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    text-align: center;
+    margin-top: 10vh;
 }
 
-.title{
+.p{
     display: flex;
-    color: #17003d;
-    font-size: 2em;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'RG Future Regular';
-    opacity: 100%;
-    transition: opacity 1s;
+    color: #ffffff;
+    flex: 1;
+    transition: flex 1s;
     justify-content: center;
     align-items: center;
-    flex-flow: column;
+    margin-bottom: 20px;
+}
+
+.grid-container:hover{
+    flex: 3;
+    font-size: large;
+    transition: 0.5s;
+}
+
+.container{
+    color: #ffffff;
+    margin: 10px;
 }
