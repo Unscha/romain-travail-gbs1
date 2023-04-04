@@ -7,7 +7,7 @@ html,body{
     background: linear-gradient(#0d4b71, 50%, #17003d );
 }
 
-.title{
+.h1{
     display: flex;
     color: #ffffff;
     font-size: 2em;
@@ -18,6 +18,7 @@ html,body{
     transition: opacity 1s;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-flow: column;
     margin: 10px;
 }
@@ -32,20 +33,22 @@ html,body{
     height: 50vh;
     display: flex;
     flex: 1;
+    border-radius: 10px;
+    margin: 5px;
     transition: flex 1s;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: flex-end;
+    padding-bottom: 70px;
 }
 
 .panel:hover{
-    flex: 2;
+    flex: 3;
     opacity: 100%;
     margin: 0;
-    transition: 1s ease;
+    transition: 1.2s;
 }
 
 .opd{
@@ -54,8 +57,8 @@ html,body{
 
 }
 
-.qfb{
-    background-image: url("../img/qfb.png");
+.nexus{
+    background-image: url("../img/nexus.jpg");
 
 }
 
@@ -81,7 +84,7 @@ html,body{
     color: #ffffff;
     flex: 1;
     transition: flex 1s;
-    justify-content: center;
+    text-align: center;
     align-items: center;
     margin-bottom: 20px;
 }
@@ -92,7 +95,20 @@ html,body{
     transition: 0.5s;
 }
 
-.container{
+.container {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;  
     color: #ffffff;
-    margin: 10px;
+    width: 100vw;
+    margin-top: 100px;
+}
+
+h3{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Tahoma sans-serif';
+
 }
