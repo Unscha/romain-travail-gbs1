@@ -1,8 +1,8 @@
 * {
-    box-shadow: 0 0 0 1px red inset;
+    box-shadow: 0 0 0 0px red inset;
 }
 
-/*body page 1*/
+/***************************** BODY ************************************************/
 html,body{
     scroll-behavior: smooth;
     background-repeat: no-repeat;
@@ -14,7 +14,8 @@ html,body{
     font-family: "Roboto";
 }
 
-
+/***************************** IMAGES ***********************************************/
+/***************************** PAGE PRINCIPALE **************************************/
 
 .panels{
     display: flex;
@@ -70,25 +71,41 @@ html,body{
     margin-top: 40px;
     text-align: left;
     box-sizing: border-box;
-    padding-top: 40px;
+    padding: 40px;
     font-size: large;
 }
 
-.h1{
+/***************************** READABLE **************************************/
+
+.title{
     display: flex;
-    color: antiquewhite;
-    font-size: 2em;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'RG Future Regular';
     opacity: 100%;
     transition: opacity 1s;
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-flow: column;
     margin: 10px;
 }
+
+h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "RG Future Regular";
+    text-align: center;
+    color: aliceblue;
+    font-size: 3em;
+}
+
+h2{    
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "RG Future Regular";
+    text-align: center;
+    color: aliceblue;
+    font-size: 2em;
+}
+
+
 
 h4{
     display: flex;
@@ -99,6 +116,12 @@ h4{
     height: 8vh;
 }
 
+h5{
+    display: flex;
+    color: aliceblue;
+    text-transform: capitalize;
+}
+
 hr {
     border: 1px solid red;
 }
@@ -106,9 +129,28 @@ hr {
 p {
     color: #ffffff;
     text-align: left;
-    box-sizing: border-box;
     font-size: medium;
 }
+
+span{
+    color: #ffffff;
+    text-align: left;
+    font-size: medium;
+}
+
+.list{
+    color: #ffffff;
+    text-align: left;
+    font-size: medium;
+}
+
+.grid{
+    display: flex;
+    justify-content: center;
+    
+}
+
+/***************************** PAGE OPD ********************************************/
 
 .solana {
     margin: 100px;
@@ -122,12 +164,48 @@ p {
     margin: 100px;
 }
 
-.carousel{
+.planet {
     display: flex;
-    flex-flow: wrap row;
     justify-content: center;
-    align-items: flex-end;
-    align-content: center;
-    width: 80vw;
-    height: 80vh;
+}
+
+/***************************** PAGE CRACK IN TIME **************************************/
+
+.list{
+    list-style-type: none;
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+}
+
+main{
+    margin: 100px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+.game{
+    
+    opacity: 70%;
+}
+
+.game>:hover{
+    opacity: 100%;
+    background-color: #17003d;
+    transition: 1s ease-in-out;
+}
+
+/***************************** CAROUSEL JS **************************************/
+
+.carousel p {
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    background: linear-gradient(#0d4b71, 50%, #17003d);
 }
